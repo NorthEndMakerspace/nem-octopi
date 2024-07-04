@@ -4,7 +4,7 @@ OctoPi is a full OS intended for running Octoprint, and is based on Raspbian.  I
 
 ## Bill of Materials
 
-You need the following:
+You need the following for each printer:
 
 1. Raspberry Pi 3B or newer [Example](https://www.canakit.com/raspberry-pi/pi-3-model-b-plus-kits)
 2. Wall-wart power supply providing 5V and >= 2.5A [Example](https://www.canakit.com/official-raspberry-pi-power-supply.html)
@@ -23,3 +23,4 @@ Follow [guides/OCTOPRINT_SETUP.md](guides/OCTOPRINT_SETUP.md) to set up Octoprin
 ## Reference
 
 <https://github.com/guysoft/OctoPi>
+
