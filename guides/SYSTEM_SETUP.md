@@ -2,7 +2,7 @@
 
 I use a Mac; some of the commands described here are Mac-centric.
 
-Download the latest image of [Octopi](https://octopi.octoprint.org/latest).
+Download the latest image of [Octopi](https://octopi.OctoPrint.org/latest).
 
 ## NEM and printer details
 
@@ -86,7 +86,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-> TODO: This password should be stored somewhere safe where Octoprint stewards have access to it.  Unsure if NEM has a secret sharing solution in place.
+> TODO: This password should be stored somewhere safe where OctoPrint stewards have access to it.  Unsure if NEM has a secret sharing solution in place.
 
 ## Configure the system
 

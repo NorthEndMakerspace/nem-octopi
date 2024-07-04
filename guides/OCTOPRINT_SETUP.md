@@ -1,6 +1,6 @@
-# Initial Octoprint Setup
+# Initial OctoPrint Setup
 
-With a configured OctoPi system, you can open Octoprint in a web browser from any PC on the makerspace WiFi network.
+With a configured OctoPi system, you can open OctoPrint in a web browser from any PC on the makerspace WiFi network.
 
 Given, for example, the OctoPi for printer `pinky`, go to [http://pinky.local/](http://pinky.local/).
 
@@ -14,9 +14,9 @@ We have no backup to restore.
 
 ### Access Control
 
-Create user `steward` and use the appropriate NEM Octoprint password.  This will be the admin user for Octoprint, with full access to its settings.
+Create user `steward` and use the appropriate NEM OctoPrint password.  This will be the admin user for OctoPrint, with full access to its settings.
 
-> TODO: This password should be stored somewhere safe where Octoprint stewards have access to it.  Unsure if NEM has a secret sharing solution in place.
+> TODO: This password should be stored somewhere safe where OctoPrint stewards have access to it.  Unsure if NEM has a secret sharing solution in place.
 
 ### Online Connectivity Check
 
@@ -63,7 +63,7 @@ If prompted, click to Reload the page.
 
 ## Add the makerspace user
 
-In normal operation, people will interact with Octoprint as the less-privileged user `nem` with password `nem` and the login page will be set to remember the user.
+In normal operation, people will interact with OctoPrint as the less-privileged user `nem` with password `nem` and the login page will be set to remember the user.
 
 In the upper-right corner, click the gear icon to open settings.
 
@@ -86,7 +86,7 @@ Click `Save` to save and close the settings.
 6. For `Application identifier` enter `Badger` or other relevant and informative description of the use case
 7. Copy the generated API key and store it somewhere safe.  You can come back to the application keys list to view the API key at any time.
 
-See [OCTOPRINT_API.md](/guides/OCTOPRINT_API.md) for more information about using the API.
+See [OctoPrint_API.md](/guides/OctoPrint_API.md) for more information about using the API.
 
 Click `Save` to save and close the settings.
 
@@ -98,8 +98,8 @@ Click `Save` to save and close the settings.
 4. Click on `Features -> Webcam & Timelapse` and
    1. *Clear* the checkbox for `Enable webcam support`
    2. *Clear* the checkbox for `Enable timelapse support`
-5. Click on `Octoprint -> Appearance` and set `Title` to the printer's name, e.g. `pinky`.  This will provide a visual cue to users of Octoprint which printer they're working with.
-6. Click on `Octoprint -> Announcements` and *clear* all of the announcements.  We don't want makerspace users to see announcements and think there's something they should do.
+5. Click on `OctoPrint -> Appearance` and set `Title` to the printer's name, e.g. `pinky`.  This will provide a visual cue to users of OctoPrint which printer they're working with.
+6. Click on `OctoPrint -> Announcements` and *clear* all of the announcements.  We don't want makerspace users to see announcements and think there's something they should do.
 
 Click `Save` to save and close the settings.
 
@@ -110,10 +110,10 @@ Click `Save` to save and close the settings.
 3. **Click the `Remember me` checkbox!
 4. Log on
 
-The `nem` username and password can be stored on the wiki or wherever people may need it if Octoprint gets logged out for some reason.  Non-steward members should not access the `steward` account as settings will become changed, resulting in unreliable operation.
+The `nem` username and password can be stored on the wiki or wherever people may need it if OctoPrint gets logged out for some reason.  Non-steward members should not access the `steward` account as settings will become changed, resulting in unreliable operation.
 
 ## Discord integration
 
-If the Octoprint and 3d printing stewards agree to have Octoprint instances send print job status updates to Discord channels, follow the steps here to set it up.
+If the OctoPrint and 3d printing stewards agree to have OctoPrint instances send print job status updates to Discord channels, follow the steps here to set it up.
 
 > TODO pending discussion with 3d printing stewards.

@@ -1,6 +1,6 @@
 # Set up OctoPi on NEM Printers
 
-OctoPi is a full OS intended for running Octoprint, and is based on Raspbian.  It's a perfect choice for running Octoprint on Raspberry Pi systems.
+OctoPi is a full OS intended for running OctoPrint, and is based on Raspbian.  It's a perfect choice for running OctoPrint on Raspberry Pi systems.
 
 ## Bill of Materials
 
@@ -12,15 +12,18 @@ You need the following for each printer:
 4. 3D printed case for Raspberry Pi to attach to its printer's frame [Prusa Example](https://www.thingiverse.com/thing:2334119) / [Ender Example](https://www.thingiverse.com/thing:4586351)
 5. A USB-A to USB-B cable [Example](https://www.amazon.com/s?k=usb-a+to+usb-b)
 
-## Set up a new Raspberry Pi
+## Set up OctoPi
 
-Follow [guides/SYSTEM_SETUP.md](guides/SYSTEM_SETUP.md) to set up a new Octoprint system.
+Follow [guides/SYSTEM_SETUP.md](guides/SYSTEM_SETUP.md) to set up a new OctoPi system.
 
-## Set up Octoprint
+## Set up OctoPrint
 
-Follow [guides/OCTOPRINT_SETUP.md](guides/OCTOPRINT_SETUP.md) to set up Octoprint.
+Follow [guides/OctoPrint_SETUP.md](guides/OctoPrint_SETUP.md) to set up the OctoPrint software.
+
+## Other Guides
+
+Look in [guides/](guides/) for more docs around managing OctoPi and OctoPrint.
 
 ## Reference
 
 <https://github.com/guysoft/OctoPi>
-

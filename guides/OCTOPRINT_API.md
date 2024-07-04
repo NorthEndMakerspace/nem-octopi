@@ -1,12 +1,12 @@
-# Using the Octoprint API
+# Using the OctoPrint API
 
-Get an API key by logging on to Octoprint, going to `Settings -> Application Keys`.
+Get an API key by logging on to OctoPrint, going to `Settings -> Application Keys`.
 
 Requests to the API need an `Authorization` header in the format of `Authorization: Bearer api_key_string`.
 
 ## Examples
 
-Get Octoprint version:
+Get OctoPrint version:
 
 ```bash
 $ curl -H 'Authorization: Bearer api_key_string' http://pinky.local/api/version
@@ -69,4 +69,4 @@ curl -H 'Authorization: Bearer api_key_string' http://pinky.local/api/printer
 
 ## Reference
 
-Octoprint API docs: <https://docs.octoprint.org/en/master/api/>
+OctoPrint API docs: <https://docs.OctoPrint.org/en/master/api/>
