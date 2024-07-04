@@ -8,8 +8,8 @@ Occasionally the operating system should be updated.
 
 1. SSH into the system as `pi` with the corresponding password
 2. Run `sudo apt update` and provide the `pi` user's password when prompted
-3. Run `sudo -y apt dist-upgrade`
-4. Run `sudo -y apt autoremove`
+3. Run `sudo apt -y dist-upgrade`
+4. Run `sudo apt -y autoremove`
 5. Run `sudo reboot` to restart the system
 
 ## Update OctoPrint
