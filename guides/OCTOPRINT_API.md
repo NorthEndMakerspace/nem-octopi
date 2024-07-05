@@ -9,7 +9,7 @@ Requests to the API need an `Authorization` header in the format of `Authorizati
 Get OctoPrint version:
 
 ```bash
-$ curl -H 'Authorization: Bearer api_key_string' http://pinky.local/api/version
+$ curl -H 'Authorization: Bearer api_key_string' http://pinky/api/version
 {
   "api": "0.1",
   "server": "1.10.2",
@@ -20,7 +20,7 @@ $ curl -H 'Authorization: Bearer api_key_string' http://pinky.local/api/version
 Get the printer's current status:
 
 ```bash
-curl -H 'Authorization: Bearer api_key_string' http://pinky.local/api/printer
+curl -H 'Authorization: Bearer api_key_string' http://pinky/api/printer
 {
   "sd": {
     "ready": true

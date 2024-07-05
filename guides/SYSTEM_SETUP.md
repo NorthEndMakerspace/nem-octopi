@@ -94,3 +94,9 @@ passwd: password updated successfully
    1. Go to `System Options -> Hostname` and set the hostname to the associated printer's name, e.g. `pinky`.
    2. Go to `Localisation Options -> Timezone` and select `America -> Los Angeles`.
 2. Select `<Finish>` and reboot when prompted.
+
+Update the hostname in `/etc/hosts`:
+
+```bash
+sudo sed -ie 's/octoprint/pinky/g' /etc/hosts
+```

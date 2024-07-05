@@ -2,7 +2,7 @@
 
 With a configured OctoPi system, you can open OctoPrint in a web browser from any PC on the makerspace WiFi network.
 
-Given, for example, the OctoPi for printer `pinky`, go to [http://pinky.local/](http://pinky.local/).
+Given, for example, the OctoPi for printer `pinky`, go to [http://pinky/](http://pinky/).
 
 ## Wizard
 
