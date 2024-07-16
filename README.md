@@ -24,6 +24,10 @@ Follow [guides/OctoPrint_SETUP.md](guides/OctoPrint_SETUP.md) to set up the Octo
 
 Look in [guides/](guides/) for more docs around managing OctoPi and OctoPrint.
 
+## Non-Steward HowTo Documentation
+
+[Here's basic documentation for members who want to use OctoPrint](https://docs.google.com/document/d/19koeQdrWI8UM_GHkYruB8IRlSfDRL1jBYS-6IkQEMAU/edit?usp=sharing)
+
 ## Reference
 
 <https://github.com/guysoft/OctoPi>

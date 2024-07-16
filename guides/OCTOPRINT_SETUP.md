@@ -100,6 +100,7 @@ Click `Save` to save and close the settings.
    2. *Clear* the checkbox for `Enable timelapse support`
 5. Click on `OctoPrint -> Appearance` and set `Title` to the printer's name, e.g. `pinky`.  This will provide a visual cue to users of OctoPrint which printer they're working with.
 6. Click on `OctoPrint -> Announcements` and *clear* all of the announcements.  We don't want makerspace users to see announcements and think there's something they should do.
+7. Click on `OctoPrint -> Pi Support` and uncheck `Enable under voltage and overheat detection via vcgencmd get_throttled` as undervoltage warnings will confuse members.
 
 Click `Save` to save and close the settings.
 
