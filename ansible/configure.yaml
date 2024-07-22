@@ -1,0 +1,6 @@
+---
+
+- name: Configure OctoPrint
+  become: false
+  roles:
+    - octoprint

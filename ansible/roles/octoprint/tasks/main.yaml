@@ -1,0 +1,46 @@
+---
+
+- name: Create config file
+  ansible.builtin.template:
+    src: templates/config.yaml.j2
+    dest: /home/pi/.octoprint/config.yaml
+    owner: pi
+    group: pi
+    mode: '0600'
+  notify: Restart octoprint
+
+- name: Create default printer profile
+  ansible.builtin.template:
+    src: "templates/{{ octoprint[ansible_facts['nodename']]['printerTemplate'] }}_default.profile.j2"
+    dest: /home/pi/.octoprint/printerProfiles/_default.profile
+    owner: pi
+    group: pi
+    mode: '0600'
+  notify: Restart octoprint
+
+- name: Create users
+  ansible.builtin.copy:
+    src: files/users.yaml
+    dest: /home/pi/.octoprint/users.yaml
+    owner: pi
+    group: pi
+    mode: '0600'
+  notify: Restart octoprint
+
+- name: Create app keys
+  ansible.builtin.copy:
+    src: files/appkeys_keys.yaml
+    dest: /home/pi/.octoprint/data/appkeys/keys.yaml
+    owner: pi
+    group: pi
+    mode: '0600'
+  notify: Restart octoprint
+
+- name: Create plugin blacklist
+  ansible.builtin.copy:
+    src: files/plugin_blacklist.yaml
+    dest: /home/pi/.octoprint/data/plugin_blacklist.yaml
+    owner: pi
+    group: pi
+    mode: '0600'
+  notify: Restart octoprint

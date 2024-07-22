@@ -1,0 +1,6 @@
+---
+
+- name: Restart octoprint
+  ansible.builtin.service:
+    name: octoprint
+    state: restarted

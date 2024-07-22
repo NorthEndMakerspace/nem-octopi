@@ -1,0 +1,120 @@
+api:
+  allowCrossOrigin: true
+  key: {{ lookup('community.general.random_string', length=32, override_all='0123456789ABCDEF') }}
+appearance:
+  name: {{ ansible_facts['nodename'] }}
+feature:
+  modelSizeDetection: false
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1720077900
+      _important:
+        read_until: 1698310200
+      _octopi:
+        read_until: 1684929600
+      _plugins:
+        read_until: 1717891200
+      _releases:
+        read_until: 1718697600
+    enabled_channels:
+    - _important
+  classicwebcam:
+    _config_version: 1
+    snapshot: http://127.0.0.1:8080/?action=snapshot
+    stream: /webcam/?action=stream
+  cura:
+    cura_engine: null
+  discovery:
+    publicPort: 80
+    upnpUuid: {{ string | to_uuid }}
+  errortracking:
+    unique_id: {{ string | to_uuid }}
+  gcodeviewer:
+    _config_version: 1
+  octorant:
+    _config_version: 2
+    events:
+      printer_state_error:
+        media: none
+      printer_state_operational:
+        media: none
+      printer_state_unknown:
+        media: none
+      printing_cancelled:
+        media: none
+      printing_done:
+        media: none
+      printing_failed:
+        media: none
+      printing_paused:
+        media: none
+      printing_progress:
+        media: none
+        message: 📢 Printing is at {progress}% and I estimate {remaining} to go
+      printing_resumed:
+        media: none
+      printing_started:
+        media: none
+      shutdown:
+        enabled: false
+        media: none
+      startup:
+        enabled: false
+        media: none
+      timelapse_failed:
+        media: none
+      transfer_done:
+        media: none
+      transfer_failed:
+        media: none
+      transfer_progress:
+        media: none
+    progress:
+      percentage_step: '25'
+    url: {{ octoprint[ansible_facts['nodename']][discordWebhookUrl] }}
+    username: {{ ansible_facts['nodename'] }}
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: true
+    unique_id: {{ string | to_uuid }}
+  virtual_printer:
+    _config_version: 1
+printerProfiles:
+  default: _default
+serial:
+  autoconnect: true
+server:
+  commands:
+    serverRestartCommand: sudo service octoprint restart
+    systemRestartCommand: sudo shutdown -r now
+    systemShutdownCommand: sudo shutdown -h now
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: {{ lookup('community.general.random_string', length=32, special=false) }}
+  seenWizards:
+    backup: null
+    classicwebcam: 1
+    corewizard: 4
+    file_check: 1
+    tracking: null
+temperature:
+  profiles:
+  - bed: 85
+    chamber: null
+    extruder: 230
+    name: PETG
+  - bed: 60
+    chamber: null
+    extruder: 215
+    name: PLA
+webcam:
+  ffmpeg: /usr/bin/ffmpeg
+  timelapseEnabled: false
+  webcamEnabled: false

@@ -18,7 +18,29 @@ Follow [guides/SYSTEM_SETUP.md](guides/SYSTEM_SETUP.md) to set up a new OctoPi s
 
 ## Set up OctoPrint
 
-Follow [guides/OctoPrint_SETUP.md](guides/OctoPrint_SETUP.md) to set up the OctoPrint software.
+Log on to the OctoPi instance as user `pi` and run:
+
+```bash
+# Clone/update the repo for NEM-OctoPi
+if [[ ! -d nem-octopi ]]; then
+  git clone https://github.com/mikeymakesit/nem-octopi.git
+  cd nem-octopi
+else
+  cd nem-octopi
+  git pull
+fi
+```
+
+Check in `ansible/roles/octoprint/vars/main.yaml` that there's a config for the printer you're adding.  If there's not, add it using existing entries as reference, or ask an OctoPrint steward for help.
+
+Now run the tool to set up the instance:
+
+```bash
+# Install or upgrade Ansible then run the playbook
+bin/setup.sh
+```
+
+If needed, manual configuration is documented at [guides/OctoPrint_SETUP.md](guides/OctoPrint_SETUP.md).
 
 ## Other Guides
 
