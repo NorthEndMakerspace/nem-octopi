@@ -16,6 +16,20 @@ You need the following for each printer:
 
 Follow [guides/SYSTEM_SETUP.md](guides/SYSTEM_SETUP.md) to set up a new OctoPi system.
 
+## Prepare for a new printer
+
+The Ansible playbook is pre-configured with details about each current printer.  When adding a new printer for the space, one must *first* update the Ansible playbook before configuring OctoPrint on its corresponding Raspberry Pi system.
+
+This has to be done by a developer on [the Github repo](https://github.com/mikeymakesit/nem-octopi/):
+
+```bash
+export ANSIBLE_VAULT_PASSWORD="" # octoprint "steward" user's password
+export ANSIBLE_VAULT_PASSWORD_FILE=ansible/.vault_password
+ansible-vault edit nem-octopi/ansible/roles/octoprint/vars/main.yaml
+```
+
+Then push your commit and open a PR on the project.  After it's been merged, one can continue on to setting up OctoPrint for that printer.
+
 ## Set up OctoPrint
 
 Log on to the OctoPi instance as user `pi` and run:
