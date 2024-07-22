@@ -29,13 +29,7 @@ else
   cd nem-octopi
   git pull
 fi
-```
 
-Check in `ansible/roles/octoprint/vars/main.yaml` that there's a config for the printer you're adding.  If there's not, add it using existing entries as reference, or ask an OctoPrint steward for help.
-
-Now run the tool to set up the instance:
-
-```bash
 # Install or upgrade Ansible then run the playbook
 bin/setup.sh
 ```

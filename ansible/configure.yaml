@@ -1,6 +1,7 @@
 ---
 
 - name: Configure OctoPrint
+  hosts: localhost
   become: false
   roles:
     - octoprint
