@@ -1,6 +1,5 @@
 ---
 
 - name: Restart octoprint
-  ansible.builtin.service:
-    name: octoprint
-    state: restarted
+  ansible.builtin.command:
+    cmd: sudo service octoprint restart

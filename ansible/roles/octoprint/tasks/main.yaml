@@ -1,5 +1,9 @@
 ---
 
+- name: Install OctoRant plugin
+  ansible.builtin.pip:
+    name: "https://github.com/bchanudet/OctoPrint-Octorant/archive/master.zip"
+
 - name: Create config file
   ansible.builtin.template:
     src: templates/config.yaml.j2
@@ -28,8 +32,8 @@
   notify: Restart octoprint
 
 - name: Create app keys
-  ansible.builtin.copy:
-    src: files/appkeys_keys.yaml
+  ansible.builtin.template:
+    src: templates/appkeys_keys.yaml
     dest: /home/pi/.octoprint/data/appkeys/keys.yaml
     owner: pi
     group: pi

@@ -2,7 +2,7 @@ api:
   allowCrossOrigin: true
   key: {{ lookup('community.general.random_string', length=32, override_all='0123456789ABCDEF') }}
 appearance:
-  name: {{ ansible_facts['nodename'] }}
+  name: {{ ansible_facts['nodename'] | capitalize }}
 feature:
   modelSizeDetection: false
 plugins:
@@ -74,7 +74,7 @@ plugins:
         media: none
     progress:
       percentage_step: '25'
-    url: {{ octoprint[ansible_facts['nodename']][discordWebhookUrl] }}
+    url: {{ octoprint[ansible_facts['nodename']]['discordWebhookUrl'] }}
     username: {{ ansible_facts['nodename'] }}
   softwareupdate:
     _config_version: 9
