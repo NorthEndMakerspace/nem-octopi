@@ -29,9 +29,9 @@ plugins:
     cura_engine: null
   discovery:
     publicPort: 80
-    upnpUuid: {{ string | to_uuid }}
+    upnpUuid: {{ ansible_facts['nodename'] | to_uuid }}
   errortracking:
-    unique_id: {{ string | to_uuid }}
+    unique_id: {{ ansible_facts['nodename'] | to_uuid }}
   gcodeviewer:
     _config_version: 1
   octorant:
@@ -80,7 +80,7 @@ plugins:
     _config_version: 9
   tracking:
     enabled: true
-    unique_id: {{ string | to_uuid }}
+    unique_id: {{ ansible_facts['nodename'] | to_uuid }}
   virtual_printer:
     _config_version: 1
 printerProfiles:
