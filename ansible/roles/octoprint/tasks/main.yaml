@@ -4,6 +4,10 @@
   ansible.builtin.pip:
     name: "https://github.com/bchanudet/OctoPrint-Octorant/archive/master.zip"
 
+- name: Install Webooks plugin
+  ansible.builtin.pip:
+    name: "https://github.com/derekantrican/OctoPrint-Webhooks/archive/master.zip"
+
 - name: Create config file
   ansible.builtin.template:
     src: templates/config.yaml.j2
