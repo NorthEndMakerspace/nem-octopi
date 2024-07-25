@@ -32,6 +32,7 @@ echo "Making OctoPrint backup before configuring"
 do_backup $preConfigBackup
 
 # Install/upgrade ansible and run the playbook
+pip install cryptography==42.0.8
 pip install -U ansible
 export ANSIBLE_VAULT_PASSWORD_FILE=ansible/.vault_password
 
