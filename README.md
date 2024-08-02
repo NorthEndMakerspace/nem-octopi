@@ -54,6 +54,8 @@ If needed, manual configuration is documented at [guides/OctoPrint_SETUP.md](gui
 
 Look in [guides/](guides/) for more docs around managing OctoPi and OctoPrint.
 
+Examples of [sending webhooks from OctoPrint](guides/OCTOPRINT_WEBHOOKS.md).
+
 ## Non-Steward HowTo Documentation
 
 [Here's basic documentation for members who want to use OctoPrint](https://docs.google.com/document/d/19koeQdrWI8UM_GHkYruB8IRlSfDRL1jBYS-6IkQEMAU/edit?usp=sharing)
