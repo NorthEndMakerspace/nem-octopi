@@ -288,3 +288,40 @@ Here are some key messages with real-world content.
   "currentTime": 1722567444
 }
 ```
+
+### Print stopped on printer
+
+```json
+{
+  "deviceIdentifier": "delta",
+  "apiSecret": "",
+  "topic": "Print Failed",
+  "message": "Something went wrong and your print has failed.",
+  "extra": {
+    "name": "Shape-Box_0.8n_0.4mm_PETG_MK3S_2m.gcode",
+    "path": "Shape-Box_0.8n_0.4mm_PETG_MK3S_2m.gcode",
+    "origin": "sdcard",
+    "size": 36162,
+    "position": {
+      "x": "None",
+      "z": "None",
+      "t": "None",
+      "y": "None",
+      "e": "None",
+      "f": "None"
+    },
+    "fileposition": 12560,
+    "progress": 34,
+    "time": 287.36758312408347,
+    "reason": "cancelled",
+    "time_formatted": "0:04:47"
+  },
+  "state": "",
+  "job": "",
+  "progress": "",
+  "currentZ": "",
+  "offsets": "",
+  "meta": "",
+  "currentTime": 1722728256
+}
+```
