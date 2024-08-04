@@ -325,3 +325,42 @@ Here are some key messages with real-world content.
   "currentTime": 1722728256
 }
 ```
+
+### Print stopped on OctoPrint
+
+```json
+{
+  "deviceIdentifier": "delta",
+  "apiSecret": "",
+  "topic": "Print Failed",
+  "message": "Something went wrong and your print has failed.",
+  "extra": {
+    "name": "shape~10.gco",
+    "path": "shape~10.gco",
+    "origin": "sdcard",
+    "size": 36162,
+    "position": {
+      "x": "None",
+      "z": "None",
+      "t": "None",
+      "y": "None",
+      "e": "None",
+      "f": "None"
+    },
+    "fileposition": 11897,
+    "progress": 32,
+    "owner": "mike",
+    "user": "mike",
+    "time": 268.68962830200326,
+    "reason": "cancelled",
+    "time_formatted": "0:04:28"
+  },
+  "state": "",
+  "job": "",
+  "progress": "",
+  "currentZ": "",
+  "offsets": "",
+  "meta": "",
+  "currentTime": 1722729695
+}
+```
