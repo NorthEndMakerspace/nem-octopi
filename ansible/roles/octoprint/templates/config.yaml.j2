@@ -96,8 +96,7 @@ plugins:
           "state": "@state",
           "job": "@job",
           "progress": "@progress",
-          "meta": "@meta",
-          "currentTime": "@currentTime"
+          "meta": "@meta"
         }
       deviceIdentifier: {{ ansible_facts['nodename'] }}
       eventError: false
@@ -138,7 +137,7 @@ plugins:
       test_event: PrintDone
       url: {{ octoprint[ansible_facts['nodename']]['billingWebhookUrl'] }}
       verify_ssl: true
-      webhook_enabled: true
+      webhook_enabled: false
     settings_version: 5
 printerProfiles:
   default: _default
