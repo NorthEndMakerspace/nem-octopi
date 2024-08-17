@@ -2,3 +2,5 @@ all:
   vars:
     ansible_connection: local
     ansible_become: false
+  hosts:
+    localhost:
