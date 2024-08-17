@@ -58,7 +58,7 @@ plugins:
         media: none
       printing_started:
         media: none
-        message: 🖨️ I've started printing a job that should take {time_formatted}
+        message: 🖨️ I've started printing a job of size {size}
       shutdown:
         enabled: false
         media: none
@@ -77,6 +77,8 @@ plugins:
       percentage_step: '25'
     url: {{ octoprint[ansible_facts['nodename']]['discordWebhookUrl'] }}
     username: {{ ansible_facts['nodename'] }}
+  pi_support:
+    ignore_undervoltage_on_printstart: true
   softwareupdate:
     _config_version: 9
   tracking:
