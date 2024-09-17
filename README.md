@@ -32,7 +32,7 @@ Follow [guides/SYSTEM_SETUP.md](guides/SYSTEM_SETUP.md) to set up a new OctoPi s
 ```bash
 # Clone/update the repo for NEM-OctoPi
 if [[ ! -d nem-octopi ]]; then
-  git clone https://github.com/mikeymakesit/nem-octopi.git
+  git clone https://github.com/NorthEndMakerspace/nem-octopi.git
   cd nem-octopi
 else
   cd nem-octopi
@@ -104,7 +104,7 @@ Examples of [sending webhooks from OctoPrint](guides/OCTOPRINT_WEBHOOKS.md).
 
 The Ansible playbook is pre-configured with details about each current printer.  When adding a new printer for the space, one must *first* update the Ansible playbook before configuring OctoPrint on its corresponding Raspberry Pi system.
 
-This has to be done by a developer on [the Github repo](https://github.com/mikeymakesit/nem-octopi/):
+This has to be done by a developer on [the Github repo](https://github.com/NorthEndMakerspace/nem-octopi):
 
 ```bash
 export ANSIBLE_VAULT_PASSWORD="" # octoprint "steward" user's password
